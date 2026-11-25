@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91每日吃瓜必吃大瓜_爆点追踪|全网热点第一现场</title>
+<meta name="description" content="91每日吃瓜必吃大瓜是全网热点事件的聚合现场，每天为你端上最新鲜的瓜，追踪爆点、还原真相、陪你一起吃瓜围观。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--red:#e8322d;
+--red-deep:#b31f1b;
+--orange:#ff7a18;
+--yellow:#ffc42e;
+--cream:#fff8ec;
+--dark:#1a1410;
+--dark2:#241c16;
+--gray:#6d635c;
+--line:rgba(26,20,16,.1);
+--shadow:0 18px 50px rgba(26,20,16,.14);
+--radius:18px;
+}
+html{scroll-behavior:smooth}
+body{
+font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+background:var(--cream);
+color:var(--dark);
+line-height:1.75;
+overflow-x:hidden;
+-webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+::selection{background:var(--red);color:#fff}
+
+/* ============ 顶部通知条 ============ */
+.topbar{
+background:linear-gradient(90deg,var(--red-deep),var(--red),#ff5a3c);
+color:#fff;font-size:13px;letter-spacing:.5px;
+display:flex;justify-content:center;align-items:center;gap:14px;
+padding:9px 18px;text-align:center;flex-wrap:wrap;
+}
+.topbar .dot{
+width:7px;height:7px;border-radius:50%;background:var(--yellow);
+display:inline-block;animation:pulse 1.4s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.topbar b{color:var(--yellow)}
+
+/* ============ 导航 ============ */
+header{
+position:sticky;top:0;z-index:100;
+background:rgba(255,248,236,.86);
+backdrop-filter:blur(16px) saturate(160%);
+border-bottom:1px solid var(--line);
+transition:box-shadow .3s;
+}
+header.scrolled{box-shadow:0 6px 26px rgba(26,20,16,.12)}
+.nav{
+max-width:1240px;margin:0 auto;padding:0 28px;
+height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:21px;letter-spacing:.6px}
+.logo .mark{
+width:42px;height:42px;border-radius:13px;
+background:conic-gradient(from 210deg,var(--red),var(--orange),var(--yellow),var(--red));
+display:flex;align-items:center;justify-content:center;
+color:#fff;font-size:20px;font-weight:900;
+box-shadow:0 6px 18px rgba(232,50,45,.4);
+position:relative;overflow:hidden;
+}
+.logo .mark::after{
+content:"";position:absolute;inset:0;
+background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.6),transparent 60%);
+}
+.logo em{font-style:normal;color:var(--red)}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{
+padding:8px 15px;border-radius:11px;font-size:15px;font-weight:600;color:#3d332c;
+transition:.25s;position:relative;white-space:nowrap;
+}
+.nav-links a:hover{background:rgba(232,50,45,.09);color:var(--red)}
+.nav-cta{
+background:linear-gradient(135deg,var(--red),var(--orange));
+color:#fff!important;padding:10px 22px!important;border-radius:12px!important;
+box-shadow:0 8px 22px rgba(232,50,45,.32);font-weight:700;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(232,50,45,.42)}
+.menu-btn{display:none;font-size:26px;background:none;border:none;cursor:pointer;color:var(--dark)}
+
+/* ============ Hero ============ */
+.hero{
+position:relative;overflow:hidden;
+padding:74px 28px 90px;
+background:
+radial-gradient(ellipse 70% 60% at 82% 8%,rgba(255,196,46,.34),transparent 62%),
+radial-gradient(ellipse 60% 70% at 6% 100%,rgba(232,50,45,.16),transparent 60%),
+linear-gradient(180deg,#fff8ec,#fdeedd);
+}
+.hero::before{
+content:"";position:absolute;inset:0;
+background-image:radial-gradient(rgba(26,20,16,.06) 1.2px,transparent 1.2px);
+background-size:26px 26px;opacity:.7;pointer-events:none;
+}
+.hero-inner{
+max-width:1240px;margin:0 auto;position:relative;z-index:2;
+display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;
+}
+.badge{
+display:inline-flex;align-items:center;gap:9px;
+background:#fff;border:1px solid rgba(232,50,45,.25);
+color:var(--red);font-weight:700;font-size:13.5px;letter-spacing:.5px;
+padding:7px 16px;border-radius:999px;margin-bottom:22px;
+box-shadow:0 4px 16px rgba(232,50,45,.1);
+}
+.badge .live{
+width:8px;height:8px;border-radius:50%;background:var(--red);
+animation:pulse 1.2s infinite;
+}
+h1{
+font-size:clamp(38px,5vw,68px);line-height:1.08;font-weight:900;letter-spacing:-1.5px;
+margin-bottom:22px;
+}
+h1 .hl{
+background:linear-gradient(120deg,var(--red) 10%,var(--orange) 55%,var(--yellow) 95%);
+-webkit-background-clip:text;background-clip:text;color:transparent;
+position:relative;
+}
+.hero-sub{font-size:17.5px;color:#4a3f38;max-width:520px;margin-bottom:30px;font-weight:500}
+.hero-sub b{color:var(--red)}
+.hero-actions{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:38px}
+.btn{
+display:inline-flex;align-items:center;gap:9px;
+padding:15px 34px;border-radius:14px;font-weight:800;font-size:15.5px;
+transition:.28s;border:2px solid transparent;cursor:pointer;
+}
+.btn-main{
+background:linear-gradient(135deg,var(--red),var(--orange));color:#fff;
+box-shadow:0 12px 30px rgba(232,50,45,.36);
+}
+.btn-main:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(232,50,45,.46)}
+.btn-ghost{
+background:rgba(255,255,255,.75);color:var(--dark);border-color:rgba(26,20,16,.14);
+}
+.btn-ghost:hover{background:#fff;border-color:var(--red);color:var(--red);transform:translateY(-3px)}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.hstat .num{
+font-size:30px;font-weight:900;letter-spacing:-1px;
+background:linear-gradient(135deg,var(--red),var(--orange));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hstat .lab{font-size:13px;color:var(--gray);font-weight:600;letter-spacing:.5px}
+
+/* Hero 右侧卡片堆 */
+.hero-visual{position:relative;height:440px}
+.card-fly{
+position:absolute;background:#fff;border-radius:20px;padding:18px 20px;
+box-shadow:var(--shadow);border:1px solid rgba(26,20,16,.07);
+animation:float 6s ease-in-out infinite;
+}
+.card-fly .tag{
+display:inline-block;font-size:11px;font-weight:800;letter-spacing:.8px;
+background:rgba(232,50,45,.1);color:var(--red);padding:3px 10px;border-radius:6px;
+margin-bottom:9px;
+}
+.card-fly h4{font-size:15px;line-height:1.45;margin-bottom:8px}
+.card-fly p{font-size:12.5px;color:var(--gray);line-height:1.5}
+.card-fly .meta{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:11.5px;color:#9a8f87}
+.card-1{top:0;left:2%;width:268px;animation-delay:0s;transform:rotate(-3deg)}
+.card-2{top:118px;right:0;width:250px;animation-delay:1.2s;transform:rotate(2.5deg);z-index:3}
+.card-3{bottom:8px;left:14%;width:274px;animation-delay:2.4s;transform:rotate(-1deg);z-index:2}
+.card-4{
+top:250px;right:8%;width:190px;background:linear-gradient(135deg,var(--red),var(--orange));
+color:#fff;animation-delay:3.4s;transform:rotate(4deg);z-index:1;
+border:none;
+}
+.card-4 h4{font-size:14px}
+.card-4 p{color:rgba(255,255,255,.85)}
+@keyframes float{
+0%,100%{transform:translateY(0) rotate(var(--r,0deg))}
+50%{transform:translateY(-14px) rotate(var(--r,0deg))}
+}
+.card-1{--r:-3deg}.card-2{--r:2.5deg}.card-3{--r:-1deg}.card-4{--r:4deg}
+
+/* ============ 滚动跑马灯 ============ */
+.ticker{
+background:var(--dark);color:var(--cream);overflow:hidden;
+border-top:3px solid var(--red);border-bottom:3px solid var(--red);
+padding:13px 0;
+}
+.ticker-track{display:flex;gap:46px;white-space:nowrap;animation:scroll 34s linear infinite;width:max-content}
+.ticker-track span{font-size:14.5px;font-weight:700;letter-spacing:.4px;display:flex;align-items:center;gap:10px}
+.ticker-track span::before{content:"◆";color:var(--yellow);font-size:10px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ 通用 section ============ */
+section{padding:84px 28px}
+.wrap{max-width:1240px;margin:0 auto}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 52px}
+.sec-tag{
+display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:2.5px;
+color:var(--red);text-transform:uppercase;margin-bottom:14px;
+padding:5px 14px;border-radius:6px;background:rgba(232,50,45,.08);
+}
+.sec-title{font-size:clamp(28px,3.6vw,42px);font-weight:900;letter-spacing:-.8px;line-height:1.2;margin-bottom:14px}
+.sec-desc{font-size:16px;color:var(--gray);font-weight:500}
+
+/* ============ 今日大瓜头条 ============ */
+.featured{padding-top:0;padding-bottom:84px}
+.feat-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:26px}
+.feat-main{
+position:relative;overflow:hidden;border-radius:22px;
+background:linear-gradient(150deg,#241c16,#3a2b22);
+color:#fff;padding:44px 42px;min-height:390px;
+display:flex;flex-direction:column;justify-content:flex-end;
+box-shadow:var(--shadow);
+}
+.feat-main::before{
+content:"";position:absolute;inset:0;
+background:
+radial-gradient(ellipse 80% 70% at 88% 0%,rgba(255,122,24,.4),transparent 60%),
+radial-gradient(ellipse 60% 60% at 0% 100%,rgba(232,50,45,.36),transparent 60%);
+}
+.feat-main::after{
+content:"BREAKING";position:absolute;top:32px;right:-46px;
+background:var(--red);color:#fff;font-size:12px;font-weight:900;letter-spacing:3px;
+padding:9px 60px;transform:rotate(38deg);box-shadow:0 6px 18px rgba(0,0,0,.3);
+}
+.feat-main .inner{position:relative;z-index:2}
+.feat-main .f-tag{
+display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;
+background:rgba(255,196,46,.18);color:var(--yellow);
+padding:6px 14px;border-radius:999px;margin-bottom:18px;letter-spacing:.8px;
+}
+.feat-main h3{font-size:clamp(23px,2.6vw,32px);line-height:1.3;font-weight:900;margin-bottom:14px;letter-spacing:-.4px}
+.feat-main p{font-size:15px;color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:24px;max-width:520px}
+.feat-meta{display:flex;gap:22px;font-size:13px;color:rgba(255,255,255,.65);flex-wrap:wrap}
+.feat-meta b{color:var(--yellow)}
+.feat-side{display:flex;flex-direction:column;gap:18px}
+.feat-item{
+background:#fff;border-radius:16px;padding:22px 24px;border:1px solid var(--line);
+transition:.3s;flex:1;display:flex;flex-direction:column;justify-content:center;
+}
+.feat-item:hover{transform:translateX(6px);border-color:rgba(232,50,45,.3);box-shadow:0 12px 32px rgba(26,20,16,.1)}
+.feat-item .cat{font-size:11.5px;font-weight:800;letter-spacing:1px;color:var(--orange);margin-bottom:7px}
+.feat-item h4{font-size:16.5px;line-height:1.5;font-weight:800;margin-bottom:8px}
+.feat-item .fm{font-size:12.5px;color:var(--gray);display:flex;gap:14px;flex-wrap:wrap}
+
+/* ============ 大瓜滚动列表 ============ */
+.feed{background:linear-gradient(180deg,#fffdf8,#fff8ec)}
+.feed-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:42px}
+.tab{
+padding:10px 24px;border-radius:999px;font-size:14.5px;font-weight:700;
+background:#fff;border:1px solid var(--line);cursor:pointer;transition:.25s;color:var(--gray);
+}
+.tab.active,.tab:hover{background:var(--red);color:#fff;border-color:var(--red);box-shadow:0 8px 20px rgba(232,50,45,.28)}
+.feed-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feed-card{
+background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+transition:.3s;display:flex;flex-direction:column;
+}
+.feed-card:hover{transform:translateY(-8px);box-shadow:0 22px 46px rgba(26,20,16,.13);border-color:rgba(232,50,45,.22)}
+.feed-thumb{
+height:150px;position:relative;overflow:hidden;
+display:flex;align-items:center;justify-content:center;
+font-size:42px;color:#fff;
+}
+.feed-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.32))}
+.ft-a{background:linear-gradient(135deg,#ff7a18,#e8322d)}
+.ft-b{background:linear-gradient(135deg,#2b2b6e,#6a3bd1)}
+.ft-c{background:linear-gradient(135deg,#0f9b8e,#28c76f)}
+.ft-d{background:linear-gradient(135deg,#e8322d,#ff9a44)}
+.ft-e{background:linear-gradient(135deg,#1a1410,#5a463a)}
+.ft-f{background:linear-gradient(135deg,#3a7bd5,#00d2ff)}
+.feed-cat{
+position:absolute;top:14px;left:14px;z-index:2;
+background:rgba(255,255,255,.94);color:var(--red);
+font-size:11.5px;font-weight:800;letter-spacing:.8px;
+padding:4px 11px;border-radius:6px;
+}
+.feed-body{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.feed-body h4{font-size:16.5px;line-height:1.5;font-weight:800;margin-bottom:10px;transition:.25s}
+.feed-card:hover h4{color:var(--red)}
+.feed-body p{font-size:13.5px;color:var(--gray);line-height:1.65;flex:1;margin-bottom:16px}
+.feed-foot{
+display:flex;align-items:center;justify-content:space-between;
+font-size:12.5px;color:#9a8f87;padding-top:14px;border-top:1px dashed var(--line);
+}
+.feed-foot .hot{color:var(--red);font-weight:800;display:flex;align-items:center;gap:5px}
+
+/* ============ 数据板块 ============ */
+.metrics{
+background:
+radial-gradient(ellipse 60% 80% at 10% 0%,rgba(255,196,46,.16),transparent 60%),
+radial-gradient(ellipse 60% 80% at 92% 100%,rgba(232,50,45,.16),transparent 60%),
+var(--dark2);
+color:#fff;padding:80px 28px;
+}
+.metrics .sec-title{color:#fff}
+.metrics .sec-desc{color:rgba(255,255,255,.62)}
+.metrics .sec-tag{background:rgba(255,196,46,.14);color:var(--yellow)}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.metric{
+background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+border-radius:18px;padding:32px 26px;text-align:center;transition:.3s;
+backdrop-filter:blur(6px);
+}
+.metric:hover{background:rgba(255,255,255,.09);transform:translateY(-6px);border-color:rgba(255,196,46,.4)}
+.metric .m-icon{font-size:32px;margin-bottom:14px}
+.metric .m-num{
+font-size:clamp(30px,3.4vw,44px);font-weight:900;letter-spacing:-1.5px;
+background:linear-gradient(120deg,var(--yellow),var(--orange));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+line-height:1.1;
+}
+.metric .m-lab{font-size:14px;color:rgba(255,255,255,.66);margin-top:8px;font-weight:600}
+
+/* ============ 时间线 ============ */
+.timeline{padding:88px 28px;position:relative}
+.tl-wrap{max-width:860px;margin:0 auto;position:relative}
+.tl-wrap::before{
+content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;
+background:linear-gradient(180deg,transparent,var(--red) 10%,var(--orange) 90%,transparent);
+transform:translateX(-50%);border-radius:3px;
+}
+.tl-item{position:relative;width:50%;padding:0 44px 48px 0}
+.tl-item:nth-child(even){margin-left:50%;padding:0 0 48px 44px}
+.tl-dot{
+position:absolute;top:6px;right:-9px;width:18px;height:18px;border-radius:50%;
+background:#fff;border:4px solid var(--red);z-index:2;box-shadow:0 0 0 5px rgba(232,50,45,.14);
+}
+.tl-item:nth-child(even) .tl-dot{right:auto;left:-9px}
+.tl-card{
+background:#fff;border-radius:16px;padding:24px 26px;border:1px solid var(--line);
+box-shadow:0 10px 28px rgba(26,20,16,.07);transition:.3s;
+}
+.tl-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(26,20,16,.12)}
+.tl-time{font-size:12.5px;font-weight:800;color:var(--orange);letter-spacing:1px;margin-bottom:8px}
+.tl-card h4{font-size:17px;font-weight:800;margin-bottom:9px;line-height:1.45}
+.tl-card p{font-size:14px;color:var(--gray);line-height:1.7}
+.tl-item:nth-child(odd) .tl-card{text-align:right}
+.tl-item:nth-child(odd) .tl-card p{text-align:right}
+
+/* ============ 社区互动 ============ */
+.community{background:linear-gradient(180deg,#fff8ec,#fdeedd)}
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.comm-card{
+background:#fff;border-radius:20px;padding:30px 28px;border:1px solid var(--line);
+transition:.3s;position:relative;overflow:hidden;
+}
+.comm-card::before{
+content:"";position:absolute;top:0;left:0;right:0;height:4px;
+background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow));
+transform:scaleX(0);transform-origin:left;transition:.4s;
+}
+.comm-card:hover{transform:translateY(-8px);box-shadow:0 20px 44px rgba(26,20,16,.12)}
+.comm-card:hover::before{transform:scaleX(1)}
+.comm-avatar{
+width:52px;height:52px;border-radius:15px;display:flex;align-items:center;justify-content:center;
+font-size:24px;font-weight:900;color:#fff;margin-bottom:16px;
+}
+.av-a{background:linear-gradient(135deg,#ff7a18,#e8322d)}
+.av-b{background:linear-gradient(135deg,#6a3bd1,#2b2b6e)}
+.av-c{background:linear-gradient(135deg,#0f9b8e,#28c76f)}
+.comm-card h4{font-size:16.5px;font-weight:800;margin-bottom:4px}
+.comm-card .role{font-size:12.5px;color:var(--orange);font-weight:700;margin-bottom:12px}
+.comm-card p{font-size:14px;color:var(--gray);line-height:1.7;margin-bottom:18px}
+.comm-tags{display:flex;gap:8px;flex-wrap:wrap}
+.comm-tags span{
+font-size:11.5px;font-weight:700;color:var(--red);
+background:rgba(232,50,45,.08);padding:4px 11px;border-radius:999px;
+}
+
+/* ============ 订阅 ============ */
+.subscribe{
+padding:80px 28px;background:
+radial-gradient(ellipse 70% 90% at 50% 0%,rgba(232,50,45,.14),transparent 60%),
+linear-gradient(180deg,#fff8ec,#fdeedd);
+}
+.sub-box{
+max-width:820px;margin:0 auto;text-align:center;
+background:#fff;border-radius:26px;padding:54px 44px;
+box-shadow:var(--shadow);border:1px solid var(--line);position:relative;overflow:hidden;
+}
+.sub-box::before{
+content:"";position:absolute;width:220px;height:220px;border-radius:50%;
+background:radial-gradient(circle,rgba(255,196,46,.22),transparent 70%);
+top:-90px;right:-70px;
+}
+.sub-box::after{
+content:"";position:absolute;width:200px;height:200px;border-radius:50%;
+background:radial-gradient(circle,rgba(232,50,45,.16),transparent 70%);
+bottom:-90px;left:-70px;
+}
+.sub-box .inner{position:relative;z-index:2}
+.sub-box h3{font-size:clamp(24px,3vw,34px);font-weight:900;letter-spacing:-.6px;margin-bottom:12px}
+.sub-box p{font-size:15.5px;color:var(--gray);margin-bottom:28px}
+.sub-form{display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap}
+.sub-form input{
+flex:1;min-width:220px;padding:15px 20px;border-radius:13px;border:2px solid var(--line);
+font-size:15px;font-family:inherit;outline:none;transition:.25s;background:#fff8ec;
+}
+.sub-form input:focus{border-color:var(--red);background:#fff;box-shadow:0 0 0 4px rgba(232,50,45,.1)}
+.sub-form button{
+padding:15px 34px;border-radius:13px;border:none;cursor:pointer;
+background:linear-gradient(135deg,var(--red),var(--orange));color:#fff;
+font-size:15.5px;font-weight:800;font-family:inherit;transition:.28s;
+box-shadow:0 10px 26px rgba(232,50,45,.32);
+}
+.sub-form button:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(232,50,45,.42)}
+.sub-note{font-size:12.5px;color:#9a8f87;margin-top:16px}
+.sub-note span{color:var(--red);font-weight:700}
+
+/* ============ FAQ ============ */
+.faq{padding:84px 28px;background:#fffdf8}
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.faq-item{
+background:#fff;border-radius:15px;border:1px solid var(--line);overflow:hidden;transition:.3s;
+}
+.faq-item.open{border-color:rgba(232,50,45,.3);box-shadow:0 12px 30px rgba(26,20,16,.08)}
+.faq-q{
+padding:20px 26px;font-size:16px;font-weight:800;cursor:pointer;
+display:flex;justify-content:space-between;align-items:center;gap:16px;
+transition:.25s;
+}
+.faq-item.open .faq-q{color:var(--red)}
+.faq-q .ico{
+width:26px;height:26px;flex-shrink:0;border-radius:8px;
+background:rgba(232,50,45,.09);color:var(--red);
+display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;
+transition:.3s;
+}
+.faq-item.open .ico{transform:rotate(45deg);background:var(--red);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 26px}
+.faq-item.open .faq-a{max-height:280px;padding:0 26px 22px}
+.faq-a p{font-size:14.5px;color:var(--gray);line-height:1.8}
+
+/* ============ 页脚 ============ */
+footer{background:var(--dark);color:rgba(255,255,255,.72);padding:64px 28px 0}
+.foot-grid{
+max-width:1240px;margin:0 auto;
+display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;padding-bottom:48px;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+.foot-brand .logo{color:#fff;margin-bottom:18px}
+.foot-brand p{font-size:14px;line-height:1.8;color:rgba(255,255,255,.55);max-width:320px}
+.foot-social{display:flex;gap:11px;margin-top:22px}
+.foot-social a{
+width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.08);
+display:flex;align-items:center;justify-content:center;font-size:15px;
+transition:.25s;
+}
+.foot-social a:hover{background:var(--red);transform:translateY(-3px)}
+.foot-col h5{font-size:15px;font-weight:800;color:#fff;margin-bottom:18px;letter-spacing:.3px}
+.foot-col ul{display:flex;flex-direction:column;gap:11px}
+.foot-col a{font-size:14px;color:rgba(255,255,255,.55);transition:.25s}
+.foot-col a:hover{color:var(--yellow);padding-left:4px}
+.foot-bottom{
+max-width:1240px;margin:0 auto;padding:22px 0 28px;
+display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+font-size:13px;color:rgba(255,255,255,.42);
+}
+.foot-bottom .links{display:flex;gap:20px;flex-wrap:wrap}
+.foot-bottom a:hover{color:var(--yellow)}
+
+/* ============ 滚动出现动画 ============ */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 回到顶部 ============ */
+#toTop{
+position:fixed;right:26px;bottom:26px;width:50px;height:50px;border-radius:14px;
+background:linear-gradient(135deg,var(--red),var(--orange));color:#fff;border:none;
+font-size:20px;cursor:pointer;box-shadow:0 10px 26px rgba(232,50,45,.4);
+opacity:0;visibility:hidden;transition:.3s;z-index:99;display:flex;align-items:center;justify-content:center;
+}
+#toTop.show{opacity:1;visibility:visible}
+#toTop:hover{transform:translateY(-4px)}
+
+/* ============ 响应式 ============ */
+@media(max-width:1024px){
+.hero-inner{grid-template-columns:1fr;gap:40px}
+.hero-visual{height:360px;max-width:520px;margin:0 auto;width:100%}
+.feat-grid{grid-template-columns:1fr}
+.metric-grid{grid-template-columns:repeat(2,1fr)}
+.feed-list{grid-template-columns:repeat(2,1fr)}
+.comm-grid{grid-template-columns:1fr 1fr}
+.foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.nav-links{
+display:none;position:absolute;top:72px;left:0;right:0;
+background:#fff;flex-direction:column;padding:16px;gap:4px;
+box-shadow:0 18px 40px rgba(26,20,16,.14);border-bottom:1px solid var(--line);
+}
+.nav-links.open{display:flex}
+.nav-links a{width:100%;text-align:center}
+.menu-btn{display:block}
+.nav-cta{margin-top:6px}
+section{padding:60px 20px}
+.hero{padding:52px 20px 70px}
+.hero-stats{gap:22px}
+.feed-list{grid-template-columns:1fr}
+.comm-grid{grid-template-columns:1fr}
+.tl-wrap::before{left:14px}
+.tl-item,.tl-item:nth-child(even){width:100%;margin-left:0;padding:0 0 38px 44px}
+.tl-dot,.tl-item:nth-child(even) .tl-dot{left:5px;right:auto}
+.tl-item:nth-child(odd) .tl-card{text-align:left}
+.tl-item:nth-child(odd) .tl-card p{text-align:left}
+.metric-grid{grid-template-columns:1fr}
+.hero-visual{height:auto;display:flex;flex-direction:column;gap:14px}
+.card-fly{position:static;width:100%!important;transform:none!important;animation:none}
+.sub-box{padding:38px 24px}
+.foot-grid{grid-template-columns:1fr;gap:32px}
+.foot-bottom{flex-direction:column;text-align:center}
+.feat-main{padding:32px 26px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 顶部通知条 -->
+<div class="topbar">
+<span class="dot"></span>
+今日大瓜已上线 · 全网<b>18</b>个热搜爆点持续追踪中
+<span>｜</span>
+每日 <b>22:00</b> 加更「深夜瓜田」特别篇
+</div>
+
+<!-- 导航 -->
+<header id="header">
+<div class="nav">
+<a href="#top" class="logo">
+<span class="mark">瓜</span>
+<span>91<em>吃瓜</em></span>
+</a>
+<nav class="nav-links" id="navLinks">
+<a href="#featured">今日头条</a>
+<a href="#feed">大瓜现场</a>
+<a href="#metrics">吃瓜数据</a>
+<a href="#timeline">事件脉络</a>
+<a href="#community">瓜田社区</a>
+<a href="#subscribe" class="nav-cta">订阅推送</a>
+</nav>
+<button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+</div>
+</header>
+
+<!-- Hero -->
+<div class="hero" id="top">
+<div class="hero-inner">
+<div class="hero-text">
+<div class="badge"><span class="live"></span>LIVE · 实时吃瓜中</div>
+<h1>91每日吃瓜<br><span class="hl">必吃大瓜</span></h1>
+<p class="hero-sub">全网热点第一时间上桌，深挖爆点背后的来龙去脉。<b>每天更新的瓜田</b>，让每一次围观都不只是看热闹，而是看懂热闹。</p>
+<div class="hero-actions">
+<a href="#feed" class="btn btn-main">进入瓜田现场 →</a>
+<a href="#subscribe" class="btn btn-ghost">订阅每日推送</a>
+</div>
+<div class="hero-stats">
+<div class="hstat"><div class="num" data-count="1862">0</div><div class="lab">累计追踪事件</div></div>
+<div class="hstat"><div class="num" data-count="96">0</div><div class="lab">万瓜田吃瓜人</div></div>
+<div class="hstat"><div class="num" data-count="320">0</div><div class="lab">今日新增热搜</div></div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="card-fly card-1">
+<span class="tag">今日头条</span>
+<h4>一场直播连线，把三个人同时送上热搜</h4>
+<p>当事人直播间人数突破 200 万，弹幕刷屏。</p>
+<div class="meta"><span>🔥 热 9.8万</span><span>· 12 分钟前</span></div>
+</div>
+<div class="card-fly card-2">
+<span class="tag">反转现场</span>
+<h4>先喊冤后认错，叙事三次反转</h4>
+<p>吃瓜群众：这瓜我追了三天。</p>
+<div class="meta"><span>🔥 热 7.2万</span><span>· 34 分钟前</span></div>
+</div>
+<div class="card-fly card-3">
+<span class="tag">深夜瓜田</span>
+<h4>深夜长文回应，网友逐句划线</h4>
+<p>三千字声明里，五处细节被反复讨论。</p>
+<div class="meta"><span>🔥 热 6.1万</span><span>· 1 小时前</span></div>
+</div>
+<div class="card-fly card-4">
+<h4>你吃瓜，我梳理</h4>
+<p>时间线 · 证据链 · 多方说法</p>
+<div class="meta"><span>01:00 更新</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 跑马灯 -->
+<div class="ticker">
+<div class="ticker-track" id="ticker">
+<span>某综艺录制现场路透冲上热搜第一</span>
+<span>品牌方火速发布声明，评论区沦陷</span>
+<span>当事人深夜开播，观看人数十分钟破百万</span>
+<span>网友考古出三年前旧帖，细节对上了</span>
+<span>官方回应：正在核实相关情况</span>
+<span>新瓜追加｜多段对话截图被公开</span>
+<span>吃瓜日历更新：本周还有三个待爆点</span>
+<span>某综艺录制现场路透冲上热搜第一</span>
+<span>品牌方火速发布声明，评论区沦陷</span>
+<span>当事人深夜开播，观看人数十分钟破百万</span>
+<span>网友考古出三年前旧帖，细节对上了</span>
+<span>官方回应：正在核实相关情况</span>
+<span>新瓜追加｜多段对话截图被公开</span>
+<span>吃瓜日历更新：本周还有三个待爆点</span>
+</div>
+</div>
+
+<!-- 今日头条 -->
+<section class="featured" id="featured">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">TODAY'S HEADLINE</span>
+<h2 class="sec-title">今日必吃大瓜</h2>
+<p class="sec-desc">精选全网最能打的热点现场，不追根究底不罢休，每条瓜都附完整时间线与多方说法。</p>
+</div>
+<div class="feat-grid">
+<div class="feat-main reveal">
+<div class="inner">
+<span class="f-tag">🔥 全网热度第一</span>
+<h3>一场持续 72 小时的舆论风暴，如何在两小时内被彻底改写</h3>
+<p>从最初的单方面爆料，到多方接力回应，再到关键证据浮出水面，这可能是本月信息量最大的一条瓜。我们把散落在各平台的上百条碎片，整理成一条你可以一口气看懂的完整脉络。</p>
+<div class="feat-meta">
+<span>阅读 <b>128.6万</b></span>
+<span>讨论 <b>4.7万</b></span>
+<span>更新于 <b>12 分钟前</b></span>
+</div>
+</div>
+</div>
+<div class="feat-side">
+<div class="feat-item reveal">
+<div class="cat">反转追踪</div>
+<h4>反转再反转，三方各执一词，谁在说谎</h4>
+<div class="fm"><span>热度 8.4万</span><span>· 28 分钟前</span></div>
+</div>
+<div class="feat-item reveal">
+<div class="cat">考古现场</div>
+<h4>三年前的旧帖被翻出，时间线完全对上了</h4>
+<div class="fm"><span>热度 6.9万</span><span>· 52 分钟前</span></div>
+</div>
+<div class="feat-item reveal">
+<div class="cat">官方回应</div>
+<h4>一纸声明能否平息争议，网友逐字解读</h4>
+<div class="fm"><span>热度 5.2万</span><span>· 1 小时前</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 大瓜现场 -->
+<section class="feed" id="feed">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">THE FRESH FEED</span>
+<h2 class="sec-title">大瓜现场 · 实时更新</h2>
+<p class="sec-desc">按话题分类滚动推送，每一条都经过人工筛选与交叉核实，拒绝无源之水。</p>
+</div>
+<div class="feed-tabs reveal">
+<button class="tab active" data-filter="all">全部瓜田</button>
+<button class="tab" data-filter="hot">爆点追踪</button>
+<button class="tab" data-filter="flip">反转现场</button>
+<button class="tab" data-filter="archive">网友考古</button>
+<button class="tab" data-filter="reply">官方回应</button>
+</div>
+<div class="feed-list" id="feedList">
+<article class="feed-card reveal" data-cat="hot">
+<div class="feed-thumb ft-a"><span class="feed-cat">爆点追踪</span>🎯</div>
+<div class="feed-body">
+<h4>热搜第一持续六小时，讨论量突破三百万</h4>
+<p>话题从深夜开始发酵，凌晨两点冲上榜首，多条相关词条同时挤进前十。</p>
+<div class="feed-foot"><span>18 分钟前</span><span class="hot">🔥 12.4万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="flip">
+<div class="feed-thumb ft-b"><span class="feed-cat">反转现场</span>🔄</div>
+<div class="feed-body">
+<h4>爆料者删帖又复出，说法前后矛盾引质疑</h4>
+<p>多位网友整理出前后三版内容差异对比，关键细节出现明显出入。</p>
+<div class="feed-foot"><span>36 分钟前</span><span class="hot">🔥 9.7万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="archive">
+<div class="feed-thumb ft-c"><span class="feed-cat">网友考古</span>🔍</div>
+<div class="feed-body">
+<h4>旧访谈被重新翻出，一句话成关键线索</h4>
+<p>两年前的一段采访被网友截取，与当下争议点竟高度重合。</p>
+<div class="feed-foot"><span>1 小时前</span><span class="hot">🔥 7.3万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="reply">
+<div class="feed-thumb ft-d"><span class="feed-cat">官方回应</span>📢</div>
+<div class="feed-body">
+<h4>相关方发布正式说明，全文不到三百字</h4>
+<p>声明中强调将保留追责权利，但未提及核心争议细节。</p>
+<div class="feed-foot"><span>1.5 小时前</span><span class="hot">🔥 6.8万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="hot">
+<div class="feed-thumb ft-e"><span class="feed-cat">爆点追踪</span>📡</div>
+<div class="feed-body">
+<h4>直播间人数十分钟破百万，弹幕几乎刷不动</h4>
+<p>当事人罕见开播回应，全程未开打赏，评论区状态一度卡顿。</p>
+<div class="feed-foot"><span>2 小时前</span><span class="hot">🔥 11.2万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="reply">
+<div class="feed-thumb ft-f"><span class="feed-cat">官方回应</span>🧾</div>
+<div class="feed-body">
+<h4>平台发布违规处理公告，涉事账号被限制</h4>
+<p>公告称相关账号存在引战行为，已按社区规范进行处置。</p>
+<div class="feed-foot"><span>2.5 小时前</span><span class="hot">🔥 5.6万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="flip">
+<div class="feed-thumb ft-b"><span class="feed-cat">反转现场</span>⚡</div>
+<div class="feed-body">
+<h4>被指认方晒出完整聊天记录，剧情急转直下</h4>
+<p>记录时间跨度近三个月，与此前爆料的核心说法存在冲突。</p>
+<div class="feed-foot"><span>3 小时前</span><span class="hot">🔥 8.9万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="archive">
+<div class="feed-thumb ft-c"><span class="feed-cat">网友考古</span>🗂️</div>
+<div class="feed-body">
+<h4>三年前的同款风波被对比，处理方式大不同</h4>
+<p>网友翻出类似旧案例，两次回应的速度与措辞差距明显。</p>
+<div class="feed-foot"><span>4 小时前</span><span class="hot">🔥 4.5万</span></div>
+</div>
+</article>
+<article class="feed-card reveal" data-cat="hot">
+<div class="feed-thumb ft-a"><span class="feed-cat">爆点追踪</span>🧨</div>
+<div class="feed-body">
+<h4>多位关联方陆续发声，话题热度再次抬升</h4>
+<p>短短两小时内出现四份不同口径的回应，信息量巨大。</p>
+<div class="feed-foot"><span>5 小时前</span><span class="hot">🔥 10.3万</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- 吃瓜数据 -->
+<section class="metrics" id="metrics">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">BY THE NUMBERS</span>
+<h2 class="sec-title">吃瓜数据看板</h2>
+<p class="sec-desc">每一份热度背后，都是一次集体围观。数据每日更新，实时反映瓜田温度。</p>
+</div>
+<div class="metric-grid">
+<div class="metric reveal"><div class="m-icon">🍉</div><div class="m-num" data-count="1862">0</div><div class="m-lab">累计追踪事件</div></div>
+<div class="metric reveal"><div class="m-icon">🔥</div><div class="m-num" data-count="320">0</div><div class="m-lab">今日新增热搜</div></div>
+<div class="metric reveal"><div class="m-icon">👥</div><div class="m-num" data-count="96">0</div><div class="m-lab">万吃瓜群众</div></div>
+<div class="metric reveal"><div class="m-icon">⚡</div><div class="m-num" data-count="18">0</div><div class="m-lab">分钟平均首次响应</div></div>
+</div>
+</div>
+</section>
+
+<!-- 事件脉络 -->
+<section class="timeline" id="timeline">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">THE TIMELINE</span>
+<h2 class="sec-title">热门事件完整脉络</h2>
+<p class="sec-desc">把碎片按时间排好，还原事件从发生、发酵到回应的完整经过。</p>
+</div>
+<div class="tl-wrap">
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+00:00 · 事件起点</div>
+<h4>一条动态引发首轮围观</h4>
+<p>当事方在社交平台发布简短内容，评论区很快出现大量追问，话题开始被转发扩散。</p>
+</div>
+</div>
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+02:30 · 快速发酵</div>
+<h4>相关词条冲上热搜前列</h4>
+<p>多个关联账号接力讨论，二次创作与截图传播让热度迅速攀高，讨论范围从粉丝圈扩大到公共领域。</p>
+</div>
+</div>
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+05:00 · 多方回应</div>
+<h4>第二份声明让争议升级</h4>
+<p>另一相关方发布回应，措辞被网友逐句拆解，新的疑问点被不断提出，话题短暂降温后再度上涨。</p>
+</div>
+</div>
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+09:20 · 关键证据</div>
+<h4>完整记录曝光，剧情出现反转</h4>
+<p>一段跨度较长的时间线材料被公开，与最初的说法存在明显差异，舆论风向开始发生改变。</p>
+</div>
+</div>
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+15:40 · 平台处置</div>
+<h4>平台发布社区治理公告</h4>
+<p>针对引战、造谣类内容进行集中处理，多个账号受到不同程度限制，讨论逐渐趋于理性。</p>
+</div>
+</div>
+<div class="tl-item reveal">
+<div class="tl-dot"></div>
+<div class="tl-card">
+<div class="tl-time">T+24:00 · 持续追踪</div>
+<h4>热度回落，但余波未平</h4>
+<p>话题虽已跌出榜首，但相关问题仍在被持续讨论，我们的追踪也仍在继续。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 瓜田社区 -->
+<section class="community" id="community">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">COMMUNITY VOICES</span>
+<h2 class="sec-title">瓜田里的清醒派</h2>
+<p class="sec-desc">吃瓜不等于盲从。这些长期活跃在评论区的声音，让每一次围观都更有分量。</p>
+</div>
+<div class="comm-grid">
+<div class="comm-card reveal">
+<div class="comm-avatar av-a">理</div>
+<h4>理性吃瓜君</h4>
+<div class="role">资深围观者 · 加入 3 年</div>
+<p>“先看时间线，再看证据链。瓜可以吃得热闹，但结论一定要留三分余地，这是我围观这么多年最大的心得。”</p>
+<div class="comm-tags"><span>#时间线整理</span><span>#证据优先</span></div>
+</div>
+<div class="comm-card reveal">
+<div class="comm-avatar av-b">考</div>
+<h4>考古小分队</h4>
+<div class="role">内容考据党 · 加入 2 年</div>
+<p>“很多看似新鲜的瓜，其实在三年前的旧帖里就有痕迹。把老资料翻出来对照，往往能得到最有趣的答案。”</p>
+<div class="comm-tags"><span>#旧帖挖掘</span><span>#对比分析</span></div>
+</div>
+<div class="comm-card reveal">
+<div class="comm-avatar av-c">夜</div>
+<h4>深夜瓜田编辑部</h4>
+<div class="role">内容编辑 · 加入 4 年</div>
+<p>“我们更愿意花时间把一件事讲清楚，而不是急着抢第一条。慢一点，但准确一点，才对得起每一个点进来的人。”</p>
+<div class="comm-tags"><span>#深度梳理</span><span>#多方信源</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 订阅 -->
+<section class="subscribe" id="subscribe">
+<div class="sub-box reveal">
+<div class="inner">
+<h3>别让大瓜从指缝溜走</h3>
+<p>留下你的邮箱，每天早晚各一次精选推送。只推真正值得看的瓜，不打扰，不刷屏。</p>
+<form class="sub-form" id="subForm">
+<input type="email" id="subEmail" placeholder="请输入你的邮箱地址" required>
+<button type="submit">立即订阅</button>
+</form>
+<p class="sub-note">已有 <span>96 万+</span> 吃瓜人加入 · 随时可以取消订阅</p>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-tag">FAQ</span>
+<h2 class="sec-title">关于吃瓜的常见疑问</h2>
+<p class="sec-desc">你想知道的，这里都有答案。</p>
+</div>
+<div class="faq-list">
+<div class="faq-item reveal">
+<div class="faq-q">内容多久更新一次？<span class="ico">+</span></div>
+<div class="faq-a"><p>热点事件实时追踪，每日固定早晚两次精选推送，深夜时段如遇重大进展会临时加更「深夜瓜田」特别篇。</p></div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q">信息来源可靠吗？<span class="ico">+</span></div>
+<div class="faq-a"><p>所有内容均来自公开渠道，并经过人工筛选与多源交叉核实。对于尚存争议的信息，我们会明确标注其状态，不做单方面定性。</p></div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q">可以投稿或者提供线索吗？<span class="ico">+</span></div>
+<div class="faq-a"><p>当然可以。我们欢迎一切有据可查的线索，投稿时请尽量附上原始出处与时间信息，编辑部会逐一评估。</p></div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q">订阅会收到广告吗？<span class="ico">+</span></div>
+<div class="faq-a"><p>不会。订阅推送只包含内容精选，如果你不希望继续接收，可随时通过邮件底部链接一键退订。</p></div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q">如何看待争议性话题？<span class="ico">+</span></div>
+<div class="faq-a"><p>我们坚持多方信源、完整时间线与理性表达。热闹可以看，但结论需要证据，这是我们做内容最基本的原则。</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+<div class="foot-grid">
+<div class="foot-brand">
+<a href="#top" class="logo"><span class="mark">瓜</span><span>91<em>吃瓜</em></span></a>
+<p>91每日吃瓜必吃大瓜，专注全网热点现场的深度梳理。每天为你端上最新鲜的瓜，也陪你一起把瓜吃明白。</p>
+<div class="foot-social">
+<a href="#top" aria-label="微博">微</a>
+<a href="#top" aria-label="抖音">抖</a>
+<a href="#top" aria-label="小红书">书</a>
+<a href="#top" aria-label="B站">B</a>
+</div>
+</div>
+<div class="foot-col">
+<h5>内容</h5>
+<ul>
+<li><a href="#featured">今日头条</a></li>
+<li><a href="#feed">大瓜现场</a></li>
+<li><a href="#timeline">事件脉络</a></li>
+<li><a href="#metrics">吃瓜数据</a></li>
+</ul>
+</div>
+<div class="foot-col">
+<h5>社区</h5>
+<ul>
+<li><a href="#community">瓜田声音</a></li>
+<li><a href="#subscribe">订阅推送</a></li>
+<li><a href="#faq">常见疑问</a></li>
+<li><a href="#top">线索投稿</a></li>
+</ul>
+</div>
+<div class="foot-col">
+<h5>关于</h5>
+<ul>
+<li><a href="#top">团队介绍</a></li>
+<li><a href="#top">内容准则</a></li>
+<li><a href="#top">隐私政策</a></li>
+<li><a href="#top">联系合作</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© 2025 91每日吃瓜必吃大瓜 · 理性围观，温和表达</span>
+<div class="links">
+<a href="#top">用户协议</a>
+<a href="#top">隐私政策</a>
+<a href="#top">内容准则</a>
+</div>
+</div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+/* ---------- 导航滚动阴影 & 移动端菜单 ---------- */
+const header = document.getElementById('header');
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 12);
+  document.getElementById('toTop').classList.toggle('show', window.scrollY > 520);
+});
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  menuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.textContent = '☰';
+  });
+});
+
+/* ---------- 回到顶部 ---------- */
+document.getElementById('toTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ---------- 滚动出现动画 ---------- */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 0.06 + 's';
+  revealObserver.observe(el);
+});
+
+/* ---------- 数字滚动 ---------- */
+function animateCount(el) {
+  const target = parseInt(el.dataset.count, 10);
+  const duration = 1500;
+  const start = performance.now();
+  function tick(now) {
+    const p = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(eased * target).toLocaleString('en-US');
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = target.toLocaleString('en-US');
+  }
+  requestAnimationFrame(tick);
+}
+
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCount(entry.target);
+      countObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
+
+/* ---------- 分类筛选 ---------- */
+const tabs = document.querySelectorAll('.tab');
+const cards = document.querySelectorAll('.feed-card');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const filter = tab.dataset.filter;
+    cards.forEach(card => {
+      const match = filter === 'all' || card.dataset.cat === filter;
+      card.style.display = match ? 'flex' : 'none';
+      if (match) {
+        card.style.animation = 'none';
+        void card.offsetWidth;
+        card.style.animation = 'fadeUp .5s ease both';
+      }
+    });
+  });
+});
+
+/* ---------- 滚动跑马灯动态速度 ---------- */
+let tickerSpeed = 34;
+const tickerEl = document.getElementById('ticker');
+window.addEventListener('scroll', () => {
+  tickerSpeed = window.scrollY > 200 ? 20 : 34;
+  tickerEl.style.animationDuration = tickerSpeed + 's';
+}, { passive: true });
+
+/* ---------- FAQ 折叠 ---------- */
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+/* ---------- 订阅表单 ---------- */
+document.getElementById('subForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const input = document.getElementById('subEmail');
+  const btn = this.querySelector('button');
+  const email = input.value.trim();
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    input.style.borderColor = '#e8322d';
+    input.focus();
+    return;
+  }
+  const original = btn.textContent;
+  btn.textContent = '订阅成功 ✓';
+  btn.disabled = true;
+  input.value = '';
+  input.style.borderColor = '';
+  setTimeout(() => {
+    btn.textContent = original;
+    btn.disabled = false;
+  }, 2400);
+});
+
+/* ---------- 动态淡入 keyframes 注入 ---------- */
+const styleSheet = document.createElement('style');
+styleSheet.textContent = `
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+`;
+document.head.appendChild(styleSheet);
+
+/* ---------- 卡片轻微视差（桌面端） ---------- */
+const heroVisual = document.querySelector('.hero-visual');
+if (heroVisual && window.matchMedia('(min-width: 1025px)').matches) {
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 2;
+    const y = (e.clientY / window.innerHeight - 0.5) * 2;
+    heroVisual.querySelectorAll('.card-fly').forEach((card, i) => {
+      const depth = (i + 1) * 3.2;
+      card.style.marginLeft = (x * depth) + 'px';
+      card.style.marginTop = (y * depth) + 'px';
+    });
+  });
+}
+</script>
+</body>
+</html>
